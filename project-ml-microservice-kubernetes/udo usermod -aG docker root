@@ -1,0 +1,19 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Sat 2022-08-06 15:33:23 UTC; 18s ago
+     Docs: https://docs.docker.com
+ Main PID: 19892 (dockerd)
+    Tasks: 8
+   CGroup: /system.slice/docker.service
+           └─19892 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Aug 06 15:33:23 ip-172-31-11-93 dockerd[19892]: time="2022-08-06T15:33:23.086396076Z" level=warning msg="Your kernel does not support CPU realtime scheduler"
+Aug 06 15:33:23 ip-172-31-11-93 dockerd[19892]: time="2022-08-06T15:33:23.086404716Z" level=warning msg="Your kernel does not support cgroup blkio weight"
+Aug 06 15:33:23 ip-172-31-11-93 dockerd[19892]: time="2022-08-06T15:33:23.086411191Z" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+Aug 06 15:33:23 ip-172-31-11-93 dockerd[19892]: time="2022-08-06T15:33:23.086688009Z" level=info msg="Loading containers: start."
+Aug 06 15:33:23 ip-172-31-11-93 dockerd[19892]: time="2022-08-06T15:33:23.297496973Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Aug 06 15:33:23 ip-172-31-11-93 dockerd[19892]: time="2022-08-06T15:33:23.350980135Z" level=info msg="Loading containers: done."
+Aug 06 15:33:23 ip-172-31-11-93 dockerd[19892]: time="2022-08-06T15:33:23.372005488Z" level=info msg="Docker daemon" commit=a89b842 graphdriver(s)=overlay2 version=20.10.17
+Aug 06 15:33:23 ip-172-31-11-93 dockerd[19892]: time="2022-08-06T15:33:23.372362846Z" level=info msg="Daemon has completed initialization"
+Aug 06 15:33:23 ip-172-31-11-93 systemd[1]: Started Docker Application Container Engine.
+Aug 06 15:33:23 ip-172-31-11-93 dockerd[19892]: time="2022-08-06T15:33:23.396381673Z" level=info msg="API listen on /var/run/docker.sock"
